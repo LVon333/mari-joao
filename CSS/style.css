@@ -25,17 +25,28 @@
 }
 
 [data-theme="dark"] {
-  --bg-start: #2A1B3D; /* Roxo profundo */
-  --bg-end: #4A3266; /* Roxo mais claro */
-  --text-color: #FFFFFF; /* Branco puro */
-  --text-secondary: #EDE7F6; /* Off-white para textos secundários */
-  --accent: #6A1B9A; /* Ametista */
-  --highlight: #D4A017; /* Dourado suave */
-  --button-bg: #6A1B9A; /* Ametista */
-  --button-text: #FFFFFF; /* Branco */
-  --nav-bg: rgba(42, 27, 61, 0.95); /* Roxo escuro com transparência */
-  --nav-item-bg: rgba(42, 27, 61, 0.98); /* Roxo escuro com transparência */
-  --nav-item-active-bg: #6A1B9A; /* Ametista */
+  --bg-start: #2A1B3D;
+  --bg-end: #4A3266;
+  --text-color: #FFFFFF;
+  --text-secondary: #EDE7F6;
+  --accent: #6A1B9A;
+  --highlight: #D4A017;
+  --button-bg: #6A1B9A;
+  --button-text: #FFFFFF;
+  --nav-bg: rgba(42, 27, 61, 0.95); 
+  --nav-item-bg: rgba(42, 27, 61, 0.98);
+  --nav-item-active-bg: #6A1B9A;
+}
+[data-theme="dark"] .caption {
+  color: var(--highlight); /* Dourado suave */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .sticky-note {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  border: 1px solid var(--highlight);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 * {
@@ -52,20 +63,20 @@ body {
   min-height: 100vh;
 }
 
-/* Header agora rola com a página */
+
 header {
   text-align: center;
-  padding: 1rem; /* Reduzido para ocupar menos espaço */
+  padding: 1rem; 
   background: var(--nav-bg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem; /* Espaço entre o header e o conteúdo */
+  margin-bottom: 1rem; 
 }
 
 header h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 2.5rem; /* Reduzido para ocupar menos espaço */
+  font-size: 2.5rem;
   color: var(--accent);
-  margin-bottom: 0.5rem; /* Reduzido */
+  margin-bottom: 0.5rem;
 }
 
 nav {
@@ -98,7 +109,6 @@ nav a:hover:not(.active) {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Botão de tema fixo no canto superior direito */
 .theme-toggle {
   position: fixed;
   top: 1rem;
@@ -111,7 +121,7 @@ nav a:hover:not(.active) {
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: background 0.4s, color 0.4s, box-shadow 0.4s;
-  z-index: 100; /* Garante que o botão fique acima de outros elementos */
+  z-index: 100;
 }
 
 .theme-toggle:hover {
@@ -127,7 +137,7 @@ nav a:hover:not(.active) {
   position: absolute; 
   width: 20px; 
   height: 20px; 
-  background: var(--accent); /* Ametista no modo escuro */
+  background: var(--accent);
   transform: rotate(45deg); 
   animation: float 10s infinite ease-in; 
   opacity: 0.8; 
@@ -146,14 +156,13 @@ nav a:hover:not(.active) {
 
 main { text-align: center; padding: 3rem 1rem; }
 
-/* Envelope com scroll */
 .envelope {
   position: relative;
   display: inline-block;
   width: 400px;
   height: 300px;
   background: linear-gradient(135deg, var(--bg-end), var(--text-secondary));
-  border: 2px solid var(--accent); /* Borda roxa usando a variável --accent */
+  border: 2px solid var(--accent); 
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   overflow-x: hidden;
@@ -180,7 +189,6 @@ main { text-align: center; padding: 3rem 1rem; }
   line-height: 1.6; 
 }
 
-/* Moldura para as fotos */
 .frame {
   display: block;
   width: 200px;
@@ -242,7 +250,7 @@ main { text-align: center; padding: 3rem 1rem; }
 }
 .snoopy img { 
   width: 160px; 
-  border-radius: 8px; /* Mantém o border-radius, mas remove a borda */
+  border-radius: 8px;
 }
 @keyframes appear { from{opacity:0;transform:scale(0.9);}to{opacity:1;transform:scale(1);} }
 
