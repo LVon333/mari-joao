@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para o Amor da Minha Vida 💜</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <h1>Para o Amor da Minha Vida 💜</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="chat.html">Mensagens</a>
+      <a href="timeline.html">Linha do Tempo</a>
+    </nav>
+    <button class="theme-toggle">🌙</button>
+  </header>
+<body>
+
+  <main>
+    <section class="feature">
+    </section>
+
+    <!-- Animação de Corações -->
+    <div class="hearts">
+      <div class="heart" style="left:5%; animation-delay:0s;"></div>
+      <div class="heart" style="left:20%; animation-delay:1s;"></div>
+      <div class="heart" style="left:35%; animation-delay:2s;"></div>
+      <div class="heart" style="left:50%; animation-delay:3s;"></div>
+      <div class="heart" style="left:65%; animation-delay:4s;"></div>
+      <div class="heart" style="left:80%; animation-delay:5s;"></div>
+      <div class="heart" style="left:95%; animation-delay:6s;"></div>
+    </div>
+
+    <!-- Envelope -->
+    <div class="envelope">
+      <div class="letter">
+        <h2>Você é a melhor parte de mim 💜</h2>
+        <p>Obrigado meu amor, agradeço todos os dias por você. ✨<br>
+           Seu sorriso ilumina meu dia... Te amo, meu amor! 🌌</p>
+      </div>
+    </div>
+
+    <!-- Snoopy -->
+    <div class="snoopy">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Snoopy_Peanuts.png" alt="Snoopy fofo">
+    </div>
+
+    <!-- Corações ao Clique -->
+    <div class="click-heart"></div>
+
+    <!-- Livrinho de Memórias -->
+    <section class="journal">
+      <h2>Nosso Livrinho de Memórias 📖</h2>
+      <form id="add-entry-form" class="entry-form">
+        <input type="date" id="entry-date" required>
+        <input type="text" id="entry-desc" placeholder="Descrição do local..." required>
+        <button type="submit">Adicionar</button>
+      </form>
+      <button id="toggle-book">Abrir Livrinho</button>
+      <div class="book" id="book"></div>
+      <div class="book-controls" id="nav-buttons" style="display:none;">
+        <button id="prev-page">Página anterior</button>
+        <button id="next-page">Próxima página</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Feito com muito amor 💕 — Te amo minha princesa.</footer>
+
+  <div class="music">
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
