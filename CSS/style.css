@@ -49,6 +49,9 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+[data-theme="dark"] .entry p {
+  color: var(--text-color);
+}
 * {
   box-sizing: border-box;
   margin: 0;
