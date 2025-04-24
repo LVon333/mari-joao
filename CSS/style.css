@@ -50,7 +50,7 @@
 }
 
 [data-theme="dark"] .entry p {
-  color: #8b11bc var(--text-color);
+  color: var(--highlight);
 }
 * {
   box-sizing: border-box;
