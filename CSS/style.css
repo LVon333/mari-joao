@@ -44,13 +44,13 @@
 
 [data-theme="dark"] .sticky-note {
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--text-secondary);
+  color: (--text-secondary);
   border: 1px solid var(--highlight);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 [data-theme="dark"] .entry p {
-  color: var(--text-color);
+  color: #8b11bc var(--text-color);
 }
 * {
   box-sizing: border-box;
