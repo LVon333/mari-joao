@@ -544,3 +544,9 @@ footer {
     position: absolute;
     font-style: italic;
   }
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
