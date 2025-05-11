@@ -29,7 +29,9 @@ let entries = [
   { date: '02/03/2025', desc: 'Saímos a primeira vez junto com meus pais para a praia' },
   { date: '03/03/2025', desc: 'Fomos ao show na beira mar da banda magníficos, "pedido de namoro" caótico' },
   { date: '15/03/2025', desc: '"Anivesário da sua mãe", a sua surpresa, o dia que conheci sua mãe kk' },
-  { date: '11/04/2025', desc: 'O PEDIDO DE NAMORO COM ALIANÇAAAAAAS, kkkk, fomos ao coco bambu e passeamos pela beira mar' }
+  { date: '11/04/2025', desc: 'O PEDIDO DE NAMORO COM ALIANÇAAAAAAS, kkkk, fomos ao coco bambu e passeamos pela beira mar' },
+  { date: '30/04/2025', desc: 'Fomos ao show do Matuê, noite inesquecível 💥🎶' },
+  { date: '09/05/2025', desc: 'Fomos à Praça da MRV comer sanduíche no Cutelos, foi uma noite deliciosa 😋' }
 ];
 let currentPage = 0;
 let bookOpen = false;
